@@ -31,7 +31,7 @@ namespace TollBooth
         /// <returns></returns>
         public List<LicensePlateDataDocument> GetLicensePlatesToExport()
         {
-            _log.LogInformation($"Retrieving license plates to export from {_databaseId} and {_collectionId}");
+            _log.LogInformation($"Retrieving license plates to export from {_databaseId} and {_collectionId}.");
             int exportedCount = 0;
             var collectionLink = UriFactory.CreateDocumentCollectionUri(_databaseId, _collectionId);
             List<LicensePlateDataDocument> licensePlates;
